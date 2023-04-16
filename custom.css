@@ -1,0 +1,118 @@
+html {
+	scroll-padding: 180px;
+}
+
+body
+{
+	background-color: #efefef;
+	color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+	position: relative !important;
+	
+}
+
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: #C0D06F;
+	margin: 20px;
+}
+
+.as-padding {
+
+	padding-top: 90px;
+}
+
+.as-class
+{
+	text-align: center;
+	
+}
+
+.as-class img
+{
+	width: 100%;
+	height: 85%;
+}
+
+.as-class p
+{
+	margin-bottom: 30px;
+}
+
+.as-class figcaption
+{
+	margin-top: 8px;
+}
+
+/*
+.navbar-nav li:hover>.dropdown-menu
+{
+	display: block;
+}
+*/
+
+.navbar
+{
+	min-height: 57px;
+	
+}
+
+.nav-item
+{
+	font-family: 'Barlow', sans-serif !important;
+	font-size: 1.5rem;
+	
+}
+
+.form-control { display: inline-block !important; }
+
+.bg-jumpers
+{
+	background-color: white !important;
+}
+
+.nav-link disabled
+{
+	color: black !important;
+}
+
+.form-control {
+    border: 0; 
+    outline: 0 !important;
+    border-bottom: 2px solid blue;
+	outline: none !important;
+}
+
+.no-border {
+	border: 0;
+}
+
+btn:focus, a:focus
+{
+         outline: none;
+}
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none;
+}
+
+.form-floating {
+	position: relative;
+}
+
+.icon {
+	position: absolute;
+	top: calc(50%);
+}
+
+.mywidth {
+	width: 200px !important"
+}
+
+
+
+
