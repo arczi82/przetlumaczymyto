@@ -10,7 +10,8 @@
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	
 	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	
     <title>Biuro Tłumaczeń AS</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="custom.css">
@@ -19,7 +20,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap" rel="stylesheet">
 	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	
 
 	
@@ -37,7 +38,11 @@
 		
 			<a class="navbar-brand" href="#"><img src="img/Logo1.png" width="140" height="90" class="d-inline-block align-bottom" alt=""></a>
 		
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+			<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>-->
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-expanded="false" aria-controls="mainmenu"> 
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		
@@ -46,19 +51,19 @@
 				<ul class="navbar-nav ms-auto">
 				
 					<li class="nav-item active">
-						<a class="nav-link" href="#">O mnie</a>
+						<a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">O mnie</a>
 					</li>
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#Oferta">Oferta</a>
+						<a class="nav-link" href="#Oferta" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Oferta</a>
 					</li>
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#Cennik">Cennik</a>
+						<a class="nav-link" href="#Cennik" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Cennik</a>
 					</li>
 					
 					<li class="nav-item">
-						<a class="nav-link" href="#Kontakt">Kontakt</a>
+						<a class="nav-link" href="#Kontakt" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Kontakt</a>
 					</li>
 					
 					<li class="nav-item">
@@ -81,22 +86,23 @@
 		
 		<!--<section class="jumpers">-->
 		
-			<div class="container-fluid as-class as-padding">
+			<div class="container as-class as-padding">
 				
-				<header>
+				<div class="col">
 				<div class="row p-3 mt-5">
-					<div class="col-sm-6 col-md-6 mb-2">
+					<div class="col-md-6">
 					<h1 class="mt-5">O mnie</h1>
 						<p class="text-justify">Z tłumaczeniami pracuję już niespełna 20 lat. Od 11 prowadzę własną działalność. Praca jest moją pasją. Kocham robić to, co robię, więc w każde słowo czy to pisane czy mówione, angażuje się w 100%. Wraz z zespołem tłumaczy przysięgłych i specjalistycznych z udokumentowanym wykształceniem i stażem pracy stanowimy zgrany team i nie boimy się żadnych wyzwań. Przetłumaczyliśmy już setki tysięcy stron w przeróżnych dziedzinach i kombinacjach językowych. To ogromny kapitał wiedzy i doświadczenia, z którego korzystam ja i moi klienci.
 						W pracy kieruję się zasadą "obsługuj tak, jak sam chciałbyś być obsłużony". Staram się zapewnić obsługę na najwyższym poziomie i zapewniam o poufności oraz rzetelności i staranności. 	W Biurze Tłumaczeń AS Anna Stach wykorzystuję nowoczesne narzędzia gwarantujące najwyższą jakość usług, a także bezpieczeństwo danych moich Klientów. Systemy informatyczne spełniają rygorystyczne normy bezpieczeństwa, dzięki czemu Klienci mogą ze spokojem powierzać mi do tłumaczenia również poufne dokumenty.
 						Serdecznie zapraszam do siedziby biura lub do wybranego przez siebie sposobu kontaktu. 
 						</p>
 					</div>
-					<div class="col-sm-6 col-md-6">
+					<div class="col-md-6">
 						<img src="img/BT_AS.png" class="mt-3 mb-3" alt="me">
 					</div>
 				</div>
-				</header>
+			</div>
+				
 				
 				<div id="Oferta" data-bs-spy="scroll" data-bs-target="#card" data-bs-offset="0"><H1 class="text-dark">Oferta</H1></div>
 				<div class="row">
@@ -117,7 +123,7 @@
 							<i class="bi bi-journal-text" style="font-size:5rem;"></i>
 							<div class="card-body">
 								<h5 class="card-title">Tłumaczenia zwykłe</h5>
-								<p class="card-text text-justify">Tłumaczenia, które nie są pieczętowane i podpisywane, choć czas dostają pieczęć biura tłumaczeń. Tłumaczenia te służą do dalszej pracy z tekstem, mogą być edytowane, nie wymagają formy uwierzytelnionej. Do nich zaliczamy wszelkiego rodzaju umowy, instrukcje obsługi, teksty na strony internetowe, treści materiałów reklamowych, książki, artykułu prasowe, prywatna korespondencja, itp. Termin realizacji ustalam indywidualnie. Tak termin, jak i koszt tłumaczenia zależą bowiem od specyfiki dokumentu, poziomu trudności, rozpiętości tekstu, itd. Tłumaczenia zwykłe rozliczam według ilości znaków na stronie tj. 1800 znaków ze spacjami = 1 strona rozliczeniowa. W zakładce cennik znajdują się orientacyjne ceny poszczególnych grup językowych.</p>
+								<p class="card-text text-justify">Tłumaczenia, które nie są pieczętowane i podpisywane, choć czasem dostają pieczęć biura tłumaczeń. Tłumaczenia te służą do dalszej pracy z tekstem, mogą być edytowane, nie wymagają formy uwierzytelnionej. Do nich zaliczamy wszelkiego rodzaju umowy, instrukcje obsługi, teksty na strony internetowe, treści materiałów reklamowych, książki, artykułu prasowe, prywatna korespondencja, itp. Termin realizacji ustalam indywidualnie. Tak termin, jak i koszt tłumaczenia zależą bowiem od specyfiki dokumentu, poziomu trudności, rozpiętości tekstu, itd. Tłumaczenia zwykłe rozliczam według ilości znaków na stronie tj. 1800 znaków ze spacjami = 1 strona rozliczeniowa. W zakładce cennik znajdują się orientacyjne ceny poszczególnych grup językowych.</p>
 								<a href="#Cennik" class="btn btn-primary">Zobacz cennik</a>
 							</div>
 						</div>
@@ -134,75 +140,168 @@
 						</div>
 					</div>
 				</div>
-					
-					<!--<div class="container-fluid">
-					<H1 class="font-weight-bold text-dark justufy-content-center">Cennik</H1>
-					</div>-->
-					<div id="Cennik" class="mt-5"><H1 class="text-dark">Cennik</H1></div>
-					<div class="table">
-					<table class="table justify-content-center table-fixed text-wrap">
+									
+								
+					<!--<div class="row text-center text-dark justify-content-center">
+							<div class="col border border-primary ">
+								<div><h2>Tłumaczenia przysięgłe<h2></div>
+								<div class="row order-1">
+									<div class="col-md-4"></div>
+									<div class="col-md-4 order-2">Z języka polskiego na obcy 1125 znaków ze spacjami</div>
+									<div class="col-md-4 order last">Na język polski z obcego 1125 znaków ze spacjami</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 justify-content-center">	
+										<ul class="fw-bold text-justify my-auto">
+											<li class="list-group-item">Angielski</li>
+											<li class="list-group-item">Francuski</li>
+											<li class="list-group-item">Niemiecki</li>
+											<li class="list-group-item">Niderlandzki</li>
+											<li class="list-group-item">Rosyjski</li>
+											<li class="list-group-item">Ukraiński</li>
+											<li class="list-group-item">Wloski</li>
+										</ul></div>
+									<div class="col-md-4 my-auto"><H1 class="text-dark fw-bold">Od 50zł</H1></div>
+									<div class="col-md-4 my-auto"><H1 class="text-dark fw-bold">Od 40zł</H1></div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 fw-bold">Inne języki europejskie</div>
+									<div class="col-md-4">Wycena indywidualna</div>
+									<div class="col-md-4">Wycena indywidualna</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 fw-bold">Języki pozaeuropejskie</div>
+									<div class="col-md-4">Wycena indywidualna</div>
+									<div class="col-md-4">Wycena indywidualna</div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-5"></div>
+					<div class="row text-center text-dark justify-content-center">
+							<div class="col border border-primary">
+								<div><h2>Tłumaczenia zwykłe<h2></div>
+								<div class="row justify-content-center">
+									<div class="col-md-4"></div>
+									<div class="col-md-4">Z języka polskiego na obcy 1800 znaków ze spacjami</div>
+									<div class="col-md-4">Na język polski z obcego 1800 znajów ze spacjami</div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-md-4">	
+										<ul class="fw-bold my-auto">
+											<li class="list-group-item">Angielski</li>
+											<li class="list-group-item">Francuski</li>
+											<li class="list-group-item">Niemiecki</li>
+											<li class="list-group-item">Niderlandzki</li>
+											<li class="list-group-item">Rosyjski</li>
+											<li class="list-group-item">Ukraiński</li>
+											<li class="list-group-item">Wloski</li>
+										</ul></div>
+									<div class="col-md-4 my-auto"><H1 class="text-dark fw-bold">Od 50zł</H1></div>
+									<div class="col-md-4 my-auto"><H1 class="text-dark fw-bold">Od 40zł</H1></div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-md-4 fw-bold">Inne języki europejskie</div>
+									<div class="col-md-8">Wycena indywidualna</div>
+									<!--<div class="col-md-4 themed-grid-col border border-primary">Na język polski z obcego 1800 znajów ze spacjami</div>-->
+								
+								<!--<div class="row justify-content-center">
+									<div class="col-md-4 themed-grid-col fw-bold">Języki pozaeuropejskie</div>
+									<div class="col-md-8 themed-grid-col ">Wycena indywidualna</div>
+									<!--<div class="col-md-4 themed-grid-col border border-primary">Na język polski z obcego 1800 znajów ze spacjami</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="mt-5"></div>
+					<div class="row text-center text-dark justify-content-center">
+							<div class="col border border-primary">
+								<div><h2>Redagowanie pism, wniosków<h2></div>
+								<div class="row justify-content-center">
+									<div class="col-md-4"></div>
+									<div class="col-md-4">W jezyku polskim</div>
+									<div class="col-md-4">W języku angielskim</div>
+								</div>
+								<div class="row justify-content-center">
+									<div class="col-md-4">	
+										<ul class="fw-bold my-auto">
+											<li class="list-group-item">Redagowanie pism, wniosków</li>
+											<li class="list-group-item">Prowadzenie korespondencji</li>
+											<li class="list-group-item">Obsługa telefoniczna</li>
+										</ul>
+									</div>
+									<div class="col-md-4 my-auto"><H1 class="text-dark fw-bold">Od 20zł</H1></div>
+									<div class="col-md-4 my-auto"><H1 class="text-dark fw-bold">Od 30zł</H1></div>
+								</div>
+							</div>
+						</div>-->
+						
+							
+					<!--<div class="col-sm-6 col-md-12 gx-5">-->
+					<div id="Cennik" class="mt-5 mb-5"><H1 class="text-dark">Cennik</H1></div>
+					<table class="table table-sm justify-content-center table-fixed text-wrap gx-2 table-borderless align-middle mb-3">
 						<thead>
 							<tr>
-							  <th colspan="2" scope="col">Tłumaczenia przysięgłe</th>
-							  <th colspan="2" scope="col">Tłumaczenia zwykłe</th>
-							  <th colspan="2" scope="col">Redagowanie pism i wniosków</th>
-							 </tr>
+							  <th colspan="2" scope="col"><H4 class="text-dark fw-bold">Tłumaczenia przysięgłe</H4></th>
+							</tr>
 						</thead>
 						<tbody>
 							<tr>
-							  <td>Z języka polskiego na obcy:</br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span> - 1125</br>znaków ze spacjami</td>
-							  <td>Na język polski z obcego:</br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span> - 1125</br>znaków ze spacjami</td>
-							  <td>Z języka polskiego na obcy:</br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span> - 1125</br>znaków ze spacjami</td>
-							  <td>Na język polski z obcego"</br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span> - 1125</br>znaków ze spacjami</td>
-							  <td>W języku polskim</td>
-							  <td>W języku angielskim</td>
+							  <td><span class="fw-bold pt-5">Z języka polskiego na obcy:</span></br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span></br>1125 znaków ze spacjami</td>
+							  <td><span class="fw-bold pt-3">Na język polski z obcego:</span></br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span><br/>1125 znaków ze spacjami</td>
 							</tr>
 							<tr>
-							  <td><H1 class="font-weight-bold text-dark">Od 50zł</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Od 40zł</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Od 40zł</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Od 30zł</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Od 20zł</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Od 30zł</H1></td>
+							  <td><H1 class="font-weight-bold text-dark fw-bold">Od 50zł</H1></td>
+							  <td><H1 class="font-weight-bold text-dark fw-bold">Od 40zł</H1></td>
 							</tr>
 							<tr>
-							  <td>Inne języki europejskie/poza europejskie</td>
-							  <td>Inne języki europejskie/poza europejskie</td>
-							  <td>Inne języki europejskie/poza europejskie</td>
-							  <td>Inne języki europejskie/poza europejskie</td>
-							  <td>Obsługa telefoniczna</td>
-							  <td>Obsługa telefoniczna</td>
-							</tr>
+							  <td>Inne języki europejskie / poza europejskie</td>
+							  <td>Inne języki europejskie / poza europejskie</td>
+							 </tr>
 							<tr>
-							  <td><H1 class="font-weight-bold text-dark">Wycena indywidualna</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Wycena indywidualna</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Wycena indywidualna</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Wycena indywidualna</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Wycena indywidualna</H1></td>
-							  <td><H1 class="font-weight-bold text-dark">Wycena indywidualna</H1></td>
+							  <td><H5 class="font-weight-bold text-dark fw-bold">Wycena indywidualna</H5></td>
+							  <td><H5 class="font-weight-bold text-dark fw-bold">Wycena indywidualna</H5></td>
 							</tr>
 						</tbody>
 					</table>
-					</div>
+					<table class="table table-sm justify-content-center table-fixed text-wrap table-borderless">
+						<thead>
+							<tr>
+							  <th colspan="2" scope="col"><H4 class="text-dark fw-bold">Tłumaczenia zwykłe</H4></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							  <td><span class="fw-bold">Z języka polskiego na obcy:</span></br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span><br/>1125 znaków ze spacjami</td>
+							  <td><span class="fw-bold">Na język polski z obcego:</span></br><span class="text-primary">angielski, włoski, niemiecki, francuski,</br>rosyjski, ukraiński niderlandzki</span><br/>125 znaków ze spacjami</td>
+							</tr>
+							<tr>
+							  <td><H1 class="font-weight-bold text-dark fw-bold">Od 40zł</H1></td>
+							  <td><H1 class="font-weight-bold text-dark fw-bold">Od 30zł</H1></td>
+							</tr>
+							<tr>
+							  <td>Inne języki europejskie / poza europejskie</td>
+							  <td>Inne języki europejskie / poza europejskie</td>
+							 </tr>
+							<tr>
+							  <td><H5 class="font-weight-bold text-dark fw-bold">Wycena indywidualna</H5></td>
+							  <td><H5 class="font-weight-bold text-dark fw-bold">Wycena indywidualna</H5></td>
+						    </tr>
+						</tbody>
+					</table>
+				
 					
+				
 								
-						<!--<div class="container-fluid">
-							<H1 class="font-weight-bold text-dark justufy-content-center">Cennik</H1>
-					</div>-->
+					<!--<div class="container-fluid">-->
+						<div id="Kontakt" class="mt-5 mb-5"><h1 class="text-dark">Kontakt</h1></div>
 					
-								
-								
-					<div class="container">
-						<div id="Kontakt" class="mt-5"><h1 class="text-dark">Kontakt</h1></div>
-					
-					<div class="row text-start ms-auto">
-					<div class="col-6 mb-3 align-middle">
+					<div class="row text-start ms-auto mb-5">
+					<div class="col-sm-6 col-md-6 mb-3 align-middle">
 					<h1 class="mb-9 text-dark">Dane kontaktowe:</h1>
 								<div class="mx-auto">
-								<h4 class="mb-3 align-middle"><i class="bi bi-geo-fill"></i> Biuro Tłumaczeń AS, 41-250 Czeladź, Dehnelów 40</h4>
+								<h4 class="mb-3 align-middle"><i class="bi bi-geo-fill"></i> Biuro Tłumaczeń AS, 42-250 Czeladź, Dehnelów 40</h4>
 								<h4 class="mb-3"><i class="bi bi-telephone-fill"></i></i> 505 966 321</h4>
 								<h4 class="mb-3"><i class="bi bi-envelope-at-fill"></i>	kontakt@przetlumaczymyto.pl</h4>
-								<h4 class="mb-3"><i class="bi bi-car-front-fill"></i> GPS: 50.30924814366611, 19.062226469269458</h4>
 								</div>
 							</div>
 						<!--<div class="col-md-6 mb-3 align-self-center">
@@ -229,19 +328,19 @@
 								</div>
 							</form>
 						</div>-->
-					<div class="col-sm-6 col-md-6 shadow p-3 mb-4">
-						<iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.0795423355926!2d19.059656912404524!3d50.30910767144693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d1c1c2c7edbd%3A0xe8f31088330e1a7e!2sBiuro%20T%C5%82umacze%C5%84%20AS%20Anna%20Stach!5e0!3m2!1spl!2spl!4v1681547666479!5m2!1spl!2spl" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="col-sm-6 col-md-6 shadow p-3 mb-4 responsive-iframe">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.0795423355926!2d19.059656912404524!3d50.30910767144693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d1c1c2c7edbd%3A0xe8f31088330e1a7e!2sBiuro%20T%C5%82umacze%C5%84%20AS%20Anna%20Stach!5e0!3m2!1spl!2spl!4v1681547666479!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 											
 				</div>	
-				</div>				
+			</div>				
 				
 						
 					
 			
 			
 				
-				</div>
+				
 				
 							
 		<!--</section>-->
